@@ -32,7 +32,11 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/products', 'ProductController::index');
 $routes->get('ajax-datatable', 'ProductController::ajaxDataTables');
-$routes->get('/dashboards', 'DashboardController::index');
+$routes->get('/dashboard', 'DashboardController::index');
+
+$routes->get("fullcalendar", "DashboardController::index");
+$routes->get("booking", "DashboardController::loadData");
+$routes->post("bookingAjax", "DashboardController::ajax");
 
 // ===============POST 
 // List all posts

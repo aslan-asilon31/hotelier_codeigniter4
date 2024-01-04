@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'hotelier_codeigniter',
+        'database' => 'hotelier',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
